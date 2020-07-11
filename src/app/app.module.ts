@@ -7,6 +7,7 @@ import { RegisterComponent } from './login/register.component';
 
 // Routes
 import { APP_ROUTES } from './app.routes';
+import { PagesModule } from './pages/pages.module';
 
 
 
@@ -18,7 +19,8 @@ import { APP_ROUTES } from './app.routes';
   ],
   imports: [
     BrowserModule,
-    APP_ROUTES
+    APP_ROUTES,
+    PagesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
