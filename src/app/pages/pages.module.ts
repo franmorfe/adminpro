@@ -14,6 +14,10 @@ import { Graphics1Component } from './graphics1/graphics1.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonutComponent } from '../components/grafico-donut/grafico-donut.component';
 import { AccountSettingsComponent } from './account-settings/account-settings.component';
+import { PromesasComponent } from './promesas/promesas.component';
+import { RxjsComponent } from './rxjs/rxjs.component';
+import { CommonModule } from '@angular/common';
+
 
 
 
@@ -25,7 +29,9 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         PagesComponent,
         IncrementadorComponent,
         GraficoDonutComponent,
-        AccountSettingsComponent
+        AccountSettingsComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     exports: [
         DashboardComponent,
@@ -37,7 +43,8 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
         SharedModule,
         PAGES_ROUTES,
         FormsModule,
-        ChartsModule
+        ChartsModule,
+        CommonModule
     ]
 })
 
