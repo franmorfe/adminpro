@@ -17,7 +17,7 @@ import { AccountSettingsComponent } from './account-settings/account-settings.co
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { CommonModule } from '@angular/common';
-
+import { NopagefoundComponent } from './nopagefound/nopagefound.component';
 
 
 
@@ -31,13 +31,15 @@ import { CommonModule } from '@angular/common';
         GraficoDonutComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        RxjsComponent
+        RxjsComponent,
+        NopagefoundComponent
     ],
     exports: [
         DashboardComponent,
         ProgressComponent,
         Graphics1Component,
-        PagesComponent
+        PagesComponent,
+        NopagefoundComponent
     ],
     imports: [
         SharedModule,
