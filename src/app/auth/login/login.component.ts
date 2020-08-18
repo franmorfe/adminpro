@@ -34,7 +34,6 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-    console.log(this.loginForm.value);
 
     this.usuarioService.login( this.loginForm.value )
         .subscribe( resp => {
@@ -75,7 +74,6 @@ export class LoginComponent implements OnInit {
   };
 
   attachSignin(element) {
-    console.log(element.id);
     this.auth2.attachClickHandler(element, {},
         (googleUser) => {
           const id_token = googleUser.getAuthResponse().id_token;
